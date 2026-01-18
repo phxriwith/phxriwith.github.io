@@ -1,106 +1,96 @@
+
 <!DOCTYPE html>
 <html lang="th">
 <head>
-  <meta charset="UTF-8">
-  <title>lifestyle phxriwith</title>
-
-  <!-- สำคัญมาก สำหรับมือถือ -->
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Lifestyle Phuriwith</title>
 
   <style>
     body {
-      font-family: Arial, sans-serif;
-      background: #0f0f0f;
-      color: #ffffff;
       margin: 0;
-      padding: 16px;
+      font-family: Arial, sans-serif;
+      background: linear-gradient(135deg, #0f2027, #203a43, #2c5364);
+      color: white;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      min-height: 100vh;
+    }
+
+    .container {
+      width: 100%;
+      max-width: 420px;
+      padding: 20px;
+      text-align: center;
     }
 
     h1 {
-      text-align: center;
+      margin-bottom: 5px;
       font-size: 28px;
-      margin-bottom: 10px;
     }
 
     p {
-      text-align: center;
-      color: #cccccc;
-      margin-bottom: 20px;
-    }
-
-    .share {
-      display: flex;
-      justify-content: center;
-      gap: 12px;
-      margin-bottom: 24px;
-      flex-wrap: wrap;
+      margin-top: 0;
+      opacity: 0.8;
+      font-size: 14px;
     }
 
     .btn {
+      display: block;
+      width: 100%;
+      padding: 16px;
+      margin: 12px 0;
+      font-size: 18px;
+      border-radius: 12px;
       text-decoration: none;
-      padding: 12px 20px;
-      border-radius: 30px;
-      font-weight: bold;
       color: white;
-      font-size: 14px;
+      font-weight: bold;
+    }
+
+    .ig {
+      background: linear-gradient(45deg,#f09433,#e6683c,#dc2743,#cc2366,#bc1888);
     }
 
     .spotify {
       background: #1DB954;
     }
 
-    .ig {
-      background: linear-gradient(45deg, #f58529, #dd2a7b, #8134af);
-    }
-
     iframe {
-      width: 100%;
       border-radius: 12px;
-      margin-bottom: 24px;
-    }
-
-    /* มือถือ */
-    @media (max-width: 600px) {
-      h1 {
-        font-size: 24px;
-      }
-
-      iframe {
-        height: 480px;
-      }
+      margin-top: 15px;
+      width: 100%;
     }
   </style>
 </head>
 
 <body>
+  <div class="container">
+    <h1>Lifestyle Phuriwith</h1>
+    <p>music • life • vibe</p>
 
-  <h1>lifestyle phxriwith</h1>
-  <p>music • mood • everyday vibes</p>
-
-  <!-- ปุ่มแชร์ -->
-  <div class="share">
-    <a class="btn spotify"
-       href="https://open.spotify.com/playlist/6ljev8USVi4VI6Ej0Lvn4U"
-       target="_blank">
-       🎧 เปิดใน Spotify
-    </a>
-
+    <!-- Instagram -->
     <a class="btn ig"
-       href="https://www.instagram.com/"
+       href="https://www.instagram.com/not.ff99/"
        target="_blank">
        📸 Instagram
     </a>
+
+    <!-- Spotify Playlist -->
+    <a class="btn spotify"
+       href="https://open.spotify.com/playlist/6ljev8USVi4VI6Ej0Lvn4U"
+       target="_blank">
+       🎧 Spotify Playlist
+    </a>
+
+    <!-- Spotify Embed (เพลง) -->
+    <iframe
+      src="https://open.spotify.com/embed/track/0ClPIeT6MSgfSgQ9ZrJbAq"
+      height="352"
+      frameborder="0"
+      allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture"
+      loading="lazy">
+    </iframe>
   </div>
-
-  <!-- Spotify Embed -->
-  <iframe
-    src="https://open.spotify.com/embed/playlist/6ljev8USVi4VI6Ej0Lvn4U"
-    height="420"
-    frameborder="0"
-    allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture"
-    loading="lazy">
-  </iframe>
-
 </body>
 </html>
-
